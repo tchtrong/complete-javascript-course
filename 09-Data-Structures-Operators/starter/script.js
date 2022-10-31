@@ -5,26 +5,34 @@ const flights =
   "_Delayed_Arrival;hel7439299980;fao93766109;12:05+" +
   "_Departure;fao93766109;lis2323639855;12:30";
 
-// Data needed for first part of the section
-const restaurant = {
-  name: "Classico Italiano",
-  location: "Via Angelo Tavanti 23, Firenze, Italy",
-  categories: ["Italian", "Pizzeria", "Vegetarian", "Organic"],
-  starterMenu: ["Focaccia", "Bruschetta", "Garlic Bread", "Caprese Salad"],
-  mainMenu: ["Pizza", "Pasta", "Risotto"],
+const flightsStr = flights.split("+").map((flight, flightIndex) => {
+  return flight
+    .split(";")
+    .map((value, idx) => {
+      switch (idx) {
+        case 0: {
+          return `${value.startsWith("_Delayed") ? "🔴" : ""}${value.replaceAll(
+            "_",
+            " "
+          )}`.padStart(20, " ");
+        }
 
-  openingHours: {
-    thu: {
-      open: 12,
-      close: 22,
-    },
-    fri: {
-      open: 11,
-      close: 23,
-    },
-    sat: {
-      open: 0, // Open 24 hours
-      close: 24,
-    },
-  },
-};
+        case 1:
+          return `from ${value.slice(0, 3).toUpperCase()}`;
+
+        case 2:
+          return `to ${value.slice(0, 3).toUpperCase()}`;
+
+        case 3:
+          return `(${value.replace(":", "h")})`;
+
+        default:
+          throw new Error(
+            `Wrong format: More ";" than expected at flight ${flightIndex + 1}`
+          );
+      }
+    })
+    .join(" ");
+});
+
+flightsStr.forEach((flightStr) => console.log(flightStr));

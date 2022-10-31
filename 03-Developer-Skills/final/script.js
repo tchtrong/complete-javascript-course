@@ -116,7 +116,7 @@ const amplitudeBug = calcTempAmplitudeBug([3, 5, 1], [9, 4, 5]);
 console.log(amplitudeBug);
 */
 
-///////////////////////////////////////
+/// ////////////////////////////////////
 // Coding Challenge #1
 
 /*

@@ -1,10 +1,10 @@
 'use strict';
 
-/////////////////////////////////////////////////
-/////////////////////////////////////////////////
+/// //////////////////////////////////////////////
+/// //////////////////////////////////////////////
 // BANKIST APP
 
-/////////////////////////////////////////////////
+/// //////////////////////////////////////////////
 // Data
 
 // DIFFERENT DATA! Contains movement dates, currency and locale
@@ -51,7 +51,7 @@ const account2 = {
 
 const accounts = [account1, account2];
 
-/////////////////////////////////////////////////
+/// //////////////////////////////////////////////
 // Elements
 const labelWelcome = document.querySelector('.welcome');
 const labelDate = document.querySelector('.date');
@@ -78,7 +78,7 @@ const inputLoanAmount = document.querySelector('.form__input--loan-amount');
 const inputCloseUsername = document.querySelector('.form__input--user');
 const inputClosePin = document.querySelector('.form__input--pin');
 
-/////////////////////////////////////////////////
+/// //////////////////////////////////////////////
 // Functions
 
 const formatMovementDate = function (date, locale) {
@@ -102,7 +102,7 @@ const formatMovementDate = function (date, locale) {
 const formatCur = function (value, locale, currency) {
   return new Intl.NumberFormat(locale, {
     style: 'currency',
-    currency: currency,
+    currency,
   }).format(value);
 };
 
@@ -213,7 +213,7 @@ const startLogOutTimer = function () {
   return timer;
 };
 
-///////////////////////////////////////
+/// ////////////////////////////////////
 // Event handlers
 let currentAccount, timer;
 
@@ -361,8 +361,8 @@ btnSort.addEventListener('click', function (e) {
   sorted = !sorted;
 });
 
-/////////////////////////////////////////////////
-/////////////////////////////////////////////////
+/// //////////////////////////////////////////////
+/// //////////////////////////////////////////////
 // LECTURES
 
 /*

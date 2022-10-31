@@ -1,10 +1,10 @@
 'use strict';
 
-/////////////////////////////////////////////////
-/////////////////////////////////////////////////
+/// //////////////////////////////////////////////
+/// //////////////////////////////////////////////
 // BANKIST APP
 
-/////////////////////////////////////////////////
+/// //////////////////////////////////////////////
 // Data
 const account1 = {
   owner: 'Jonas Schmedtmann',
@@ -36,7 +36,7 @@ const account4 = {
 
 const accounts = [account1, account2, account3, account4];
 
-/////////////////////////////////////////////////
+/// //////////////////////////////////////////////
 // Elements
 const labelWelcome = document.querySelector('.welcome');
 const labelDate = document.querySelector('.date');
@@ -63,7 +63,7 @@ const inputLoanAmount = document.querySelector('.form__input--loan-amount');
 const inputCloseUsername = document.querySelector('.form__input--user');
 const inputClosePin = document.querySelector('.form__input--pin');
 
-/////////////////////////////////////////////////
+/// //////////////////////////////////////////////
 // Functions
 
 const displayMovements = function (movements, sort = false) {
@@ -136,7 +136,7 @@ const updateUI = function (acc) {
   calcDisplaySummary(acc);
 };
 
-///////////////////////////////////////
+/// ////////////////////////////////////
 // Event handlers
 let currentAccount;
 
@@ -233,8 +233,8 @@ btnSort.addEventListener('click', function (e) {
   sorted = !sorted;
 });
 
-/////////////////////////////////////////////////
-/////////////////////////////////////////////////
+/// //////////////////////////////////////////////
+/// //////////////////////////////////////////////
 // LECTURES
 
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
@@ -338,7 +338,7 @@ currenciesUnique.forEach(function (value, _, map) {
 });
 */
 
-///////////////////////////////////////
+/// ////////////////////////////////////
 // Coding Challenge #1
 
 /* 
@@ -446,7 +446,7 @@ const max = movements.reduce((acc, mov) => {
 console.log(max);
 */
 
-///////////////////////////////////////
+/// ////////////////////////////////////
 // Coding Challenge #2
 
 /* 
@@ -505,7 +505,7 @@ const totalDepositsUSD = movements
 console.log(totalDepositsUSD);
 */
 
-///////////////////////////////////////
+/// ////////////////////////////////////
 // Coding Challenge #3
 
 /* 
@@ -653,7 +653,7 @@ labelBalance.addEventListener('click', function () {
 });
 */
 
-///////////////////////////////////////
+/// ////////////////////////////////////
 // Array Methods Practice
 
 // 1.
@@ -714,7 +714,7 @@ console.log(convertTitleCase('this is a nice title'));
 console.log(convertTitleCase('this is a LONG title but not too long'));
 console.log(convertTitleCase('and here is another title with an EXAMPLE'));
 
-///////////////////////////////////////
+/// ////////////////////////////////////
 // Coding Challenge #4
 
 /* 

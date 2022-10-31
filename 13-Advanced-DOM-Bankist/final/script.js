@@ -11,7 +11,7 @@ const tabs = document.querySelectorAll('.operations__tab');
 const tabsContainer = document.querySelector('.operations__tab-container');
 const tabsContent = document.querySelectorAll('.operations__content');
 
-///////////////////////////////////////
+/// ////////////////////////////////////
 // Modal window
 
 const openModal = function (e) {
@@ -36,7 +36,7 @@ document.addEventListener('keydown', function (e) {
   }
 });
 
-///////////////////////////////////////
+/// ////////////////////////////////////
 // Button scrolling
 btnScrollTo.addEventListener('click', function (e) {
   const s1coords = section1.getBoundingClientRect();
@@ -67,7 +67,7 @@ btnScrollTo.addEventListener('click', function (e) {
   section1.scrollIntoView({ behavior: 'smooth' });
 });
 
-///////////////////////////////////////
+/// ////////////////////////////////////
 // Page navigation
 
 // document.querySelectorAll('.nav__link').forEach(function (el) {
@@ -92,7 +92,7 @@ document.querySelector('.nav__links').addEventListener('click', function (e) {
   }
 });
 
-///////////////////////////////////////
+/// ////////////////////////////////////
 // Tabbed component
 
 tabsContainer.addEventListener('click', function (e) {
@@ -114,7 +114,7 @@ tabsContainer.addEventListener('click', function (e) {
     .classList.add('operations__content--active');
 });
 
-///////////////////////////////////////
+/// ////////////////////////////////////
 // Menu fade animation
 const handleHover = function (e) {
   if (e.target.classList.contains('nav__link')) {
@@ -133,7 +133,7 @@ const handleHover = function (e) {
 nav.addEventListener('mouseover', handleHover.bind(0.5));
 nav.addEventListener('mouseout', handleHover.bind(1));
 
-///////////////////////////////////////
+/// ////////////////////////////////////
 // Sticky navigation: Intersection Observer API
 
 const header = document.querySelector('.header');
@@ -155,7 +155,7 @@ const headerObserver = new IntersectionObserver(stickyNav, {
 
 headerObserver.observe(header);
 
-///////////////////////////////////////
+/// ////////////////////////////////////
 // Reveal sections
 const allSections = document.querySelectorAll('.section');
 
@@ -204,7 +204,7 @@ const imgObserver = new IntersectionObserver(loadImg, {
 
 imgTargets.forEach(img => imgObserver.observe(img));
 
-///////////////////////////////////////
+/// ////////////////////////////////////
 // Slider
 const slider = function () {
   const slides = document.querySelectorAll('.slide');
@@ -290,9 +290,9 @@ const slider = function () {
 };
 slider();
 
-///////////////////////////////////////
-///////////////////////////////////////
-///////////////////////////////////////
+/// ////////////////////////////////////
+/// ////////////////////////////////////
+/// ////////////////////////////////////
 
 /*
 ///////////////////////////////////////

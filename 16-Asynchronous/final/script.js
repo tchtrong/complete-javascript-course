@@ -72,7 +72,7 @@ getCountryData('usa');
 getCountryData('germany');
 */
 
-///////////////////////////////////////
+/// ////////////////////////////////////
 // Welcome to Callback Hell
 
 /*
@@ -216,7 +216,7 @@ btn.addEventListener('click', function () {
 // getCountryData('australia');
 */
 
-///////////////////////////////////////
+/// ////////////////////////////////////
 // Coding Challenge #1
 
 /* 
@@ -379,7 +379,7 @@ const whereAmI = function () {
 btn.addEventListener('click', whereAmI);
 */
 
-///////////////////////////////////////
+/// ////////////////////////////////////
 // Coding Challenge #2
 
 /* 
@@ -647,7 +647,7 @@ Promise.any([
   .catch(err => console.error(err));
 */
 
-///////////////////////////////////////
+/// ////////////////////////////////////
 // Coding Challenge #3
 
 /* 

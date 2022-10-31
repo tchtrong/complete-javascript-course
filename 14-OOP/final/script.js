@@ -85,7 +85,7 @@ const h1 = document.querySelector('h1');
 console.dir(x => x + 1);
 */
 
-///////////////////////////////////////
+/// ////////////////////////////////////
 // Coding Challenge #1
 
 /* 
@@ -236,7 +236,7 @@ sarah.init('Sarah', 1979);
 sarah.calcAge();
 */
 
-///////////////////////////////////////
+/// ////////////////////////////////////
 // Coding Challenge #2
 
 /* 
@@ -324,7 +324,7 @@ Student.prototype.constructor = Student;
 console.dir(Student.prototype.constructor);
 */
 
-///////////////////////////////////////
+/// ////////////////////////////////////
 // Coding Challenge #3
 
 /* 
@@ -570,7 +570,7 @@ acc1.deposit(300).deposit(500).withdraw(35).requestLoan(25000).withdraw(4000);
 console.log(acc1.getMovements());
 */
 
-///////////////////////////////////////
+/// ////////////////////////////////////
 // Coding Challenge #4
 
 /* 

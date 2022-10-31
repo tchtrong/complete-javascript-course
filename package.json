@@ -18,8 +18,12 @@
   },
   "homepage": "https://github.com/tchtrong/complete-javascript-course#readme",
   "devDependencies": {
-    "eslint": "8.26.0",
-    "eslint-config-prettier": "8.5.0",
-    "prettier": "2.7.1"
+    "eslint": "^8.26.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.3.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "prettier": "^2.7.1"
   }
 }

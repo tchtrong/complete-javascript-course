@@ -1,4 +1,4 @@
-///////////////////////////////////////
+/// ////////////////////////////////////
 // Exporting and Importing in ES6 Modules
 
 // Importing module
@@ -6,7 +6,6 @@
 // addToCart('bread', 5);
 // console.log(price, tq);
 
-console.log('Importing module');
 // console.log(shippingCost);
 
 // import * as ShoppingCart from './shoppingCart.js';
@@ -17,11 +16,6 @@ console.log('Importing module');
 // console.log(price);
 
 import add, { cart } from './shoppingCart.js';
-add('pizza', 2);
-add('bread', 5);
-add('apples', 4);
-
-console.log(cart);
 /*
 
 
@@ -99,10 +93,23 @@ export.addTocart = function (product, quantity) {
 const { addTocart } = require('./shoppingCart.js');
 */
 
-///////////////////////////////////////
+/// ////////////////////////////////////
 // Introduction to NPM
 // import cloneDeep from './node_modules/lodash-es/cloneDeep.js';
 import cloneDeep from 'lodash-es';
+
+import 'core-js/stable';
+// import 'core-js/stable/array/find';
+// import 'core-js/stable/promise';
+
+// Polifilling async functions
+import 'regenerator-runtime/runtime';
+console.log('Importing module');
+add('pizza', 2);
+add('bread', 5);
+add('apples', 4);
+
+console.log(cart);
 
 const state = {
   cart: [
@@ -136,10 +143,3 @@ console.log('Jonas' ?? null);
 
 console.log(cart.find(el => el.quantity >= 2));
 Promise.resolve('TEST').then(x => console.log(x));
-
-import 'core-js/stable';
-// import 'core-js/stable/array/find';
-// import 'core-js/stable/promise';
-
-// Polifilling async functions
-import 'regenerator-runtime/runtime';
